@@ -10,7 +10,7 @@ interface Bounds {
     readonly width: number;
     readonly height: number;
 }
-declare function SuperEllipse(props: SuperEllipseProps & React.HTMLAttributes<HTMLDivElement>): JSX.Element;
+export declare function SuperEllipse(props: SuperEllipseProps & React.HTMLAttributes<HTMLDivElement>): import("react/jsx-runtime").JSX.Element;
 export declare function getMaskStyle(bounds: Bounds, props: SuperEllipseProps): CSSProperties;
 export interface SuperEllipseImgProps {
     width: number;
@@ -23,6 +23,7 @@ export interface SuperEllipseImgProps {
     strokeColor?: string;
     strokeWidth?: number;
 }
-export declare const SuperEllipseImg: (props: SuperEllipseImgProps) => JSX.Element;
+export declare const SuperEllipseImg: (props: SuperEllipseImgProps) => import("react/jsx-runtime").JSX.Element;
 export { Preset };
 export default SuperEllipse;
+//# sourceMappingURL=index.d.ts.map

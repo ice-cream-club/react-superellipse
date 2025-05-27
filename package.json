@@ -4,7 +4,8 @@
   "description": "superellipse react component",
   "author": "QuadFlask",
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "homepage": "https://github.com/QuadFlask/react-superellipse",
   "repository": {
     "type": "git",
@@ -26,24 +27,20 @@
     "deploy": "npm version patch; npm run build; npm publish"
   },
   "dependencies": {
-    "superellipsejs": "^0.0.6",
     "react-use-measure": "^2.0.0",
-    "resize-observer-polyfill": "^1.5.1"
+    "resize-observer-polyfill": "^1.5.1",
+    "superellipsejs": "^0.0.6"
   },
   "devDependencies": {
-    "@types/react": "^16.9.31",
-    "typescript": "^3.8.3"
+    "@types/node": "^22.15.21",
+    "@types/react": "^18.0.0",
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "react": ">=16.11",
-    "react-dom": ">=16.11"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "files": [
-    "index.tsx",
-    "index.js",
-    "index.d.ts",
-    "LRUCache.ts",
-    "LRUCache.js",
-    "LRUCache.d.ts"
+    "dist"
   ]
 }

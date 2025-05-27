@@ -14,7 +14,7 @@ interface Bounds {
     readonly height: number;
 }
 
-function SuperEllipse(props: SuperEllipseProps & React.HTMLAttributes<HTMLDivElement>) {
+export function SuperEllipse(props: SuperEllipseProps & React.HTMLAttributes<HTMLDivElement>) {
     const [ref, bounds] = useMeasure();
 
     return <div {...props} ref={ref} style={{
